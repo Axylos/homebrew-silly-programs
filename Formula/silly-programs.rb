@@ -16,9 +16,11 @@ class SillyPrograms < Formula
   def install
     system "cargo", "install", "--path", "silly-echo", "--root", prefix
     system "cargo", "install", "--path", "silly-tee", "--root", prefix
+    system "cargo", "install", "--path", "silly-seq", "--root", prefix
 
     man1.install "man/silly-echo.1"
     man1.install "man/silly-tee.1"
+    man1.install "man/silly-seq.1"
   end
 
   test do
