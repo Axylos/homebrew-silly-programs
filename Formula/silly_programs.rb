@@ -1,6 +1,6 @@
 class SillyPrograms < Formula
   desc "Fun Silly Programs For Fun Silly People"
-  homepage "https://sillyprograms.com"
+  homepage "https://draketalley.com"
   url "https://github.com/Axylos/silly-programs/archive/refs/tags/v0.1.1.beta.3.tar.gz"
   sha256 "cb3a1067f14526109dcb17c29fcdb14d8e1bb698d016554bde7a270b49374a2a"
   license "MIT"
