@@ -1,8 +1,8 @@
 class SillyPrograms < Formula
   desc "Fun Silly Programs For Fun Silly People"
   homepage "https://draketalley.com"
-  url "https://github.com/Axylos/silly-programs/archive/refs/tags/0.1.2.tar.gz"
-  sha256 "e83ae70c6be837cd91397b33318ef733b9e4e158e46248900b631a48c6c19bae"
+  url "https://github.com/Axylos/silly-programs/archive/refs/tags/0.1.3.tar.gz"
+  sha256 "09f0d7b0458be211c8e8ef09d285d846b4910c9a2401042a5a4688364331de41"
   license "MIT"
 
   bottle do
@@ -16,9 +16,11 @@ class SillyPrograms < Formula
   def install
     system "cargo", "install", "--path", "silly-echo", "--root", prefix
     system "cargo", "install", "--path", "silly-tee", "--root", prefix
+    system "cargo", "install", "--path", "silly-seq", "--root", prefix
 
     man1.install "man/silly-echo.1"
     man1.install "man/silly-tee.1"
+    man1.install "man/silly-seq.1"
   end
 
   test do
