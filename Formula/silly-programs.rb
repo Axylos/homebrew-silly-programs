@@ -6,9 +6,9 @@ class SillyPrograms < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/Axylos/homebrew-silly-programs/releases/download/silly-programs-0.1.2"
-    sha256 cellar: :any_skip_relocation, big_sur:      "c16f331ba56af336a887d2ed1c49142c3c76c1eaac79fc7d5c77b857d099238f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9ecdc260a26f12c77d4732a5ca4bf2e72ec4cfeb618d1a4f80b2e30c829c7f94"
+    root_url "https://github.com/Axylos/homebrew-silly-programs/releases/download/silly-programs-0.1.3"
+    sha256 cellar: :any_skip_relocation, big_sur:      "f38a78c50650a795727ded43a6729e444dc459ead47fe6bf54edfdd5ead46dfd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9c9c72b57218fd51f6d3827e664d09e859fea6922c910b8e6a6de4f97c41a316"
   end
 
   depends_on "rust" => :build
